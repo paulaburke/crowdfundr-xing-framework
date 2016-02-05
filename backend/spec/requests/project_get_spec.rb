@@ -12,7 +12,7 @@ describe 'GET /projects/:id', :type => :request do
     "/projects/#{project.id}"
   end
 
-  if 'returned json is correctly formatted' do
+  it 'returned json is correctly formatted' do
     # fetch the resource using Xing's json_get helper
     json_get resource_url
 
