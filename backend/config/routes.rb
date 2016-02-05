@@ -29,5 +29,5 @@ Rails.application.routes.draw do
     passwords: 'passwords'
   }, :skip => [:omniauth_callbacks]
 
-  resources :projects, :only => :show
+  resources :projects, :only => [:show, :index]
 end
