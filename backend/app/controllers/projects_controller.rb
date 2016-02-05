@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
   # GET /projects
 
   def index
-    projects = Projects.all.order('created_at ASC')
+    projects = Project.all.order('created_at ASC')
     render :json => ProjectListSerializer.new(projects)
   end
 
