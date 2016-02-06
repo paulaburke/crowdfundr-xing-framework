@@ -25,6 +25,7 @@ import * as RootStates from './rootStates.js';
 import RootCtrl from './rootController.js';
 
 import Resources from "common/resources.js";
+import Projects from "./projects/projects.js";
 
 var app = new Module(appName, [
   'templates-app', 'templates-common', 'ui.router',
@@ -43,7 +44,8 @@ var app = new Module(appName, [
   appConfig,
   RootStates,
   RootCtrl,
-  Resources
+  Resources,
+  Projects
 ]);
 
 var injector = new Injector(appName);
